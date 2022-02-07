@@ -1,1 +1,12 @@
-/* Other rules */
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.page {
+  background-color: #f3f5f5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
