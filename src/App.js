@@ -11,9 +11,7 @@ function App() {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get(
-        "https://andromeda22-deliveroo-backend.herokuapp.com/"
-      );
+      const response = await axios.get(process.env.SERVER_URL);
       setData(response.data);
       setIsLoading(false);
     } catch (error) {
