@@ -1,9 +1,12 @@
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faPlusCircle, faMinusCircle } from "@fortawesome/free-solid-svg-icons";
 import "./App.css";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import Header from "./components/Header";
 import MainTop from "./components/MainTop";
 import MainContent from "./components/MainContent";
+library.add(faPlusCircle, faMinusCircle);
 
 function App() {
   const [data, setData] = useState({});

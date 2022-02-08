@@ -60,8 +60,18 @@
   overflow: hidden;
 }
 
+.price-summary {
+  display: flex;
+}
+
 .category-meal-price {
   font-size: 18px;
+  margin-right: 10px;
+}
+
+.popular {
+  color: #dbaa2e;
+  font-weight: 600;
 }
 
 .category-meal p {
@@ -78,38 +88,6 @@
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
-}
-
-.cart {
-  width: 350px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-.cart-card {
-  width: 350px;
-  background-color: #fff;
-  margin: 30px 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  border-radius: 5px;
-}
-
-.validate-cart {
-  width: 90%;
-  font-size: 16px;
-  font-weight: 600;
-  padding: 15px;
-  margin: 10px;
-  border-radius: 10px;
-  border: none;
-}
-
-.cart-summary {
-  padding: 30px 0;
 }
 
 @media (max-width: 1185px) {
