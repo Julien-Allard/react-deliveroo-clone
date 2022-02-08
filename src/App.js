@@ -6,6 +6,7 @@ import axios from "axios";
 import Header from "./components/Header";
 import MainTop from "./components/MainTop";
 import MainContent from "./components/MainContent";
+import Footer from "./components/Footer";
 library.add(faPlusCircle, faMinusCircle);
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
         <MainTop data={data} />
         <MainContent data={data} />
       </main>
+      <Footer />
     </div>
   );
 }
