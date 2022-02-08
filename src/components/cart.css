@@ -1,12 +1,12 @@
 .cart {
-  width: 350px;
+  width: 359px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
 
 .cart-card {
-  width: 350px;
+  width: 359px;
   background-color: #fff;
   margin: 30px 0;
   display: flex;
@@ -14,23 +14,70 @@
   justify-content: flex-start;
   align-items: center;
   border-radius: 5px;
+  position: sticky;
+  top: 10px;
 }
 
 .validate-cart {
-  width: 90%;
+  width: 95%;
   font-size: 16px;
   font-weight: 600;
   padding: 15px;
   margin: 10px;
   border-radius: 10px;
   border: none;
+  cursor: pointer;
+  color: white;
+  background-color: #00cdbd;
+  transition: 0.3s;
+}
+
+.off {
+  background-color: rgb(161, 155, 155);
 }
 
 .cart-summary {
-  padding: 30px 0;
-  width: 90%;
+  padding: 5px 0;
+  width: 95%;
   display: flex;
   flex-direction: column;
+  border-bottom: 1px solid rgb(161, 155, 155);
+}
+
+.plus-minus {
+  display: flex;
+  align-items: center;
+}
+
+.item-counter {
+  font-size: 17px;
+  padding: 0 5px;
+}
+
+.item-title {
+  line-height: 30px;
+  padding-left: 5px;
+  color: rgb(143, 137, 137);
+  font-size: 14px;
+}
+
+.minus-circle,
+.plus-circle {
+  color: #00cdbd;
+  font-size: 25px;
+}
+
+.plus-minus span,
+.subtotal,
+.fee,
+.true-total {
+  line-height: 30px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.cart-summary-empty {
+  padding: 40px 0;
 }
 
 .cart-item {
@@ -42,4 +89,36 @@
 .cart-price {
   display: flex;
   justify-content: space-between;
+}
+
+.subtotal,
+.fee {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.subtotal-and-fee {
+  width: 95%;
+}
+
+.true-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  border-top: 1px solid rgb(161, 155, 155);
+  font-size: 20px;
+}
+
+@media (max-width: 770px) {
+  .cart {
+    width: 100%;
+    position: sticky;
+    top: -20px;
+  }
+
+  .cart-card {
+    width: 100%;
+  }
 }

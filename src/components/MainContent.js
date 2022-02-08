@@ -28,17 +28,18 @@ const MainContent = (props) => {
         counter: 1,
         id: meals.id,
       });
+      setSubTotal(
+        Math.round((Number(subTotal) + Number(meals.price)) * 100) / 100
+      );
     } else {
       newCart[findId].counter++;
+      setSubTotal(
+        Math.round((Number(subTotal) + Number(newCart[findId].price)) * 100) /
+          100
+      );
     }
 
     setCartItems(newCart);
-
-    for (let i = 0; i < cartItems.length; i++) {
-      setSubTotal(
-        Math.ceil(subTotal + cartItems[i].price * cartItems[i].counter)
-      );
-    }
   };
 
   return (
@@ -47,6 +48,7 @@ const MainContent = (props) => {
         cartItems={cartItems}
         setCartItems={setCartItems}
         subTotal={subTotal}
+        setSubTotal={setSubTotal}
       />
       {/* <div className="cart">
         <div className="cart-card">
