@@ -12,6 +12,6 @@ The main goal was to use the useEffect hook and create a whole page based on bac
 - full responsive
 - menu and cart
 
-### Backend part :
+### You can try it here : https://react-deliveroo-julalldev.netlify.app/
 
-https://github.com/Julien-Allard/deliveroo-backend
+### Backend part : https://github.com/Julien-Allard/deliveroo-backend
