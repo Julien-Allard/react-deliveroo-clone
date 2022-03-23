@@ -68,7 +68,9 @@ const Cart = (props) => {
                     <span className="item-title">{item.title}</span>
                   </div>
                   <div className="cart-price">
-                    <span>{Math.round(item.price * item.counter)} €</span>
+                    <span>
+                      {Math.round(item.price * item.counter).toFixed(2)} €
+                    </span>
                   </div>
                 </div>
               ) : null;
@@ -84,7 +86,7 @@ const Cart = (props) => {
               <div className="subtotal">
                 <span className="subtotal-text">Sous-total</span>
                 <span className="subtotal-price">
-                  {Math.round(props.subTotal * 100) / 100} €
+                  {props.subTotal.toFixed(2)} €
                 </span>
               </div>
               <div className="fee">
@@ -94,7 +96,9 @@ const Cart = (props) => {
             </div>
             <div className="true-total">
               <span>Total</span>
-              <span>{Math.round(props.subTotal * 100) / 100 + 2.5} €</span>
+              <span>
+                {(Math.round(props.subTotal * 100) / 100 + 2.5).toFixed(2)} €
+              </span>
             </div>
           </>
         ) : null}
