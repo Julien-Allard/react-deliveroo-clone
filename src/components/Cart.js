@@ -68,9 +68,7 @@ const Cart = (props) => {
                     <span className="item-title">{item.title}</span>
                   </div>
                   <div className="cart-price">
-                    <span>
-                      {Math.round(item.price * item.counter).toFixed(2)} €
-                    </span>
+                    <span>{(item.price * item.counter).toFixed(2)} €</span>
                   </div>
                 </div>
               ) : null;

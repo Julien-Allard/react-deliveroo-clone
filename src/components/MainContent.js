@@ -50,12 +50,6 @@ const MainContent = (props) => {
         subTotal={subTotal}
         setSubTotal={setSubTotal}
       />
-      {/* <div className="cart">
-        <div className="cart-card">
-          <button className="validate-cart">Valider mon panier</button>
-          <div className="cart-summary">Votre panier est vide</div>
-        </div>
-      </div> */}
       <div className="all-items">
         {props.data.categories.map((category, index) => {
           return (
